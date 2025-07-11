@@ -1,0 +1,142 @@
+:root {
+}
+
+
+body {
+  margin-right: 300px !important;
+}
+
+#moruna {
+  all: unset;
+  display: flex;
+  height: 100vh;
+  min-width: 300px;
+  max-width: 25vw;
+  color: white;
+  background-color: #010409;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+
+  z-index: 9999;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+}
+
+
+
+/* resie-bar */
+#moruna #resize-bar {
+  width: 15px;
+  height: 100%;
+  cursor: ew-resize;
+  background: #0D1117;
+  border-right: 3px solid #2D323A;
+  position: relative;
+}
+
+#moruna #resize-bar::before {
+    width: 5px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: repeating-linear-gradient(
+        to bottom,
+        white 0 4px,
+        transparent 4px 8px
+    );
+}
+
+
+
+/* inner */
+#moruna #inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+
+
+/* inner-header */
+#moruna #inner-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+#moruna #inner-header a {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#moruna #inner-header span {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+
+/* inner-box */
+#moruna .inner-box {
+  position: relative;
+  border: 1px solid #3D444D;
+  padding: 20px 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#moruna .box-title {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  background: #010409;
+  color: white;
+  font-size: 15px;
+  padding: 0 6px;
+}
+
+
+
+/* input */
+#moruna input{
+  padding: 7px 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: white;
+  background-color: #010409;
+  border: 1px solid #3D444D;
+  border-radius: 4px;
+}
+
+
+/* button */
+#moruna button {
+  padding: 3px 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: white;
+  background-color: #212830;
+  border: 1px solid #3D444D;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+#moruna button:hover {
+  background-color: #3D444D;
+}
+
+#moruna button:active {
+  transform: scale(0.95);
+}

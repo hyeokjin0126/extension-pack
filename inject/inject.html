@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inject</title>
+    <link rel="stylesheet" href="inject.css">
+</head>
+<body>
+
+    <div style="padding: 100px;">
+        <div style="background-color: red; width: 100%; height: 500px;"></div>
+    </div>
+    
+    <div id="moruna">
+        <div id="resize-bar"></div>
+        <div id="inner">
+            <!--  -->
+            <div id="inner-header"> 
+                <a href="https://moruna.co.kr" target="_blank">Moruna <span>바로가기</span></a>
+                <button id="close" style="padding-right: auto;">닫기</button> 
+            </div>
+
+            <!--  -->
+            <div class="inner-box">
+                <div class="box-title">Naver 검색</div>
+                <input id="naver-keyword" type="text" placeholder="키워드를 입력하세요.">
+                <button id="naver-search">시작</button>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="inject.js"></script>
+</body>
+</html>
